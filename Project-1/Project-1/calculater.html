@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Calculator</title>
+    </head>
+    <style>
+        h1 {
+            font-size: 45px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif ;
+            font-weight: 200;
+            font-style: inherit;
+        }
+
+        div {
+            font-size: 20px;
+            font-weight: 200;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        }
+
+        h3 {
+            font-size: 38px;
+            font-family: monospace;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+        }
+    </style>
+    <body>
+        <h1>
+            Project
+        </h1>
+        <div id="results"></div>
+
+        <script>
+
+            let x = 60;
+            let y = 30;
+
+            let sum = x + y;
+            let sub = x - y;
+            let multi = x * y;
+            let divi = x / y;
+
+            console.log(`Addition of x and y : ${sum}`);
+            console.log(`Subtraction of x and y : ${sub}`);
+            console.log(`Multiplication of x and y   : ${multi}`);
+            console.log(`Division of x and y : ${divi}`);
+
+            let a = 10;
+            let b = 20;
+
+            console.log("Before Swapping: a = ", a, ", b = ", b);
+
+            let temp = a;
+            a = b;
+            b = temp;
+
+            console.log("After Swapping: a = ", a, ", b = ", b);
+
+            let marks = 95;
+            let Grade = 'A+';
+            console.log("Marks :", marks);
+            console.log("Grade :", Grade);
+
+            let price = 10000;
+            let quantity = 6;
+            let total = price * quantity;
+            let dis = total * 0.1;
+            let netAmt = total - dis;
+
+            console.log("Total :", total);
+            console.log("Discount :", dis);
+            console.log("NetAmount :", netAmt);
+
+            let principal_amt = 10000;
+            let int_rate = 5;
+            let month = 3;
+
+            let SI = (principal_amt * int_rate * month) / 100;
+
+            console.log("SIMPLE INTEREST :", SI);
+
+            let basic_salary = 50000;
+            let hra = basic_salary * 0.2;
+            let da = basic_salary * 0.1;
+            let gross_salary = basic_salary + hra + da;
+
+            console.log("Gross Salary :", gross_salary);
+
+            document.write("<h3>Business Calculator Output</h3>");
+            document.write("<p>Addition: ", sum, "<br> </p>");
+            document.write("<p>Net Amount after Discount: ", netAmt, "<br> </p>");
+            document.write("<p>Simple Interest: ", SI, "<br> </p>");
+            document.write("<p>Gross Salary: ", gross_salary, "<br> </p>");
+
+            alert(`Simple Interest is: ${SI}`);
+
+            document.getElementById("results").innerHTML = `
+            <p>Swapped Values: a = ${a}, b = ${b}</p>
+            <p>Grade: ${Grade}</p>
+            <p>Gross Salary: ${gross_salary}</p> `;
+        </script>
+    </body>
+</html>
