@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Order System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            color: #333;
+            margin: 30px;
+        }
+
+        h1 {
+            color: #5b2c6f;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4a235a;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            background-color: #fff;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary {
+            background-color: #fdf2e9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            color: #117864;
+            font-weight: bold;
+        }
+
+        .final {
+            background-color: #d5f5e3;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to StarBrew Café</h1>
+    <script>
+        let option;
+        let billTotal = 0;
+        let itemCost = 0;
+        let itemCount = 0;
+        let maxPrice = 0;
+        let minPrice = 0;
+        let selectedItem = "";
+        let isFirstOrder = true;
+
+        alert("Welcome to StarBrew Café!");
+        do {
+            let menuList = "Select Your Item From the Menu:-\n  1] Cold Coffee - ₹120  \n" +
+                "  2] Green Tea - ₹60  \n" +
+                "  3] Veg Burger - ₹150  \n" +
+                "  4] Chocolate Muffin - ₹90  \n" +
+                "  0] Exit  \n";
+
+            option = prompt(menuList + "Enter Your Choice (1-4) or 0 to exit and show your order & bill details..");
+
+            if (option === "1") {
+                selectedItem = "Cold Coffee";
+                itemCost = 120;
+            }
+            else if (option === "2") {
+                selectedItem = "Green Tea";
+                itemCost = 60;
+            }
+            else if (option === "3") {
+                selectedItem = "Veg Burger";
+                itemCost = 150;
+            }
+            else if (option === "4") {
+                selectedItem = "Chocolate Muffin";
+                itemCost = 90;
+            }
+            else if (option === "0") {
+                console.log("Thank You For Visiting Our Cafe, Have a Nice Day.");
+                break;
+            }
+            else {
+                alert("Invalid choice! Please try again.");
+                continue;
+            }
+
+            billTotal += itemCost;
+            itemCount++;
+
+            if (isFirstOrder) {
+                maxPrice = itemCost;
+                minPrice = itemCost;
+                isFirstOrder = false;
+            } else {
+                if (itemCost > maxPrice) maxPrice = itemCost;
+                if (itemCost < minPrice) minPrice = itemCost;
+            }
+
+            document.write(`<div class='item'><b>Item Ordered:</b> ${selectedItem}<br>Price: ₹${itemCost}<br><span class='highlight'>Running Total:</span> ₹${billTotal}</div>`);
+
+        } while (option != 0)
+
+        document.write("<div class='summary'>");
+        document.write("<h2>Bill Summary</h2>");
+        let subTotal = billTotal;
+        let tax = subTotal * 0.05;
+        let totalWithGST = subTotal + tax;
+
+        document.write(`Total Items Ordered: <b>${itemCount}</b><br>`);
+        document.write(`Subtotal: ₹${subTotal}<br>`);
+        document.write(`GST (5%): ₹${tax.toFixed(2)}<br>`);
+        document.write(`<b>Grand Total: ₹${totalWithGST.toFixed(2)}</b><br>`);
+        document.write(`Highest Priced Item: ₹${maxPrice}<br>`);
+        document.write(`Lowest Priced Item: ₹${minPrice}<br>`);
+        document.write("</div>");
+
+        let rebate = 0;
+        let payableAmount = totalWithGST;
+
+        if (subTotal > 1000) {
+            rebate = totalWithGST * 0.10;
+        }
+        else if (subTotal > 500) {
+            rebate = totalWithGST * 0.05;
+        }
+        else {
+            rebate = 0;
+        }
+
+        payableAmount = totalWithGST - rebate;
+
+        document.write("<div class='final'>");
+        document.write("<h2>Discount Details</h2>");
+        document.write(`Original Bill: ₹${totalWithGST.toFixed(2)}<br>`);
+        document.write(`Discount Applied: ₹${rebate.toFixed(2)}<br>`);
+        document.write(`<b>Final Amount to Pay: ₹${payableAmount.toFixed(2)}</b><br>`);
+        document.write("</div>");
+
+        let cafePin = "1234";
+        let oldPin = prompt("Enter the Old Password:- ");
+        let newPin = "";
+
+        if (oldPin === cafePin) {
+            newPin = prompt("Enter your NEW password:");
+            cafePin = newPin;
+            alert("Password changed successfully!");
+        } else {
+            alert("Incorrect old password. Try again.");
+        }
+
+        document.write("<div class='summary'>");
+        document.write("<h2>Password Details</h2>");
+        document.write(`Old Password: ${oldPin}<br>`);
+        if (newPin !== "") {
+            document.write(`New Password: ${newPin}`);
+        } else {
+            document.write(`New Password: Not Changed`);
+        }
+        document.write("</div>");
+        document.write("<h3 style='text-align:center; color:#4a235a;'>Thank you for visiting StarBrew Café!</h3>");
+
+    </script>
+</body>
+
+</html>
