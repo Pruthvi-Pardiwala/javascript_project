@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Destinations Input</title>
+</head>
+
+<body>
+  <h2> Travel Destinations Input (Check Console Output)</h2>
+
+  <script>
+    const destinations = [];
+    const total = 5;
+
+    for (let i = 0; i < total; i++) {
+      const place = prompt(`Enter destination ${i + 1}:`);
+      destinations.push(place);
+    }
+
+    console.log("Your Travel Destinations:", destinations);
+
+    const budget = parseInt(prompt("Enter your total budget in ₹:"));
+    let budgetMessage = "";
+
+    if (budget < 10000) {
+      budgetMessage = "Plan a short domestic trip.";
+    } else if (budget <= 50000) {
+      budgetMessage = "You can plan a long domestic trip.";
+    } else {
+      budgetMessage = "International trip possible!";
+    }
+
+    console.log("Total Budget: ₹" + budget);
+    console.log("Budget Suggestion:", budgetMessage);
+
+    const days = parseInt(prompt("Enter number of travel days:"));
+    let tripType = "";
+
+    if (days < 3) {
+      tripType = "Weekend Getaway";
+    } else if (days <= 7) {
+      tripType = "Perfect Holiday Trip";
+    } else {
+      tripType = "Extended Vacation";
+    }
+
+    console.log("Days Planned:", days);
+    console.log("Trip Type:", tripType);
+
+     const hotelSuggestion = (budget, days) => {
+      const perDay = budget / days;
+
+      if (perDay < 2000) {
+        return "Budget Hotels";
+      } else if (perDay <= 5000) {
+        return "Mid-range Hotels";
+      } else {
+        return "Luxury Hotels";
+      }
+    };
+
+    const hotelType = hotelSuggestion(budget, days);
+    console.log("Hotel Suggestion:", hotelType);
+    
+    console.log(`Travel Summary:
+        Destinations: ${destinations.join(", ")}
+        Total Budget: ₹${budget}
+        Days Planned: ${days}
+        Trip Type: ${tripType}
+        Hotel Suggestion: ${hotelType}
+        Note: ${budgetMessage}`);
+  </script>
+</body>
+
+</html>
