@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square and Cube Finder</title>
+</head>
+
+<body>
+    <h1 id="result"></h1>
+    <script>
+        let number = parseFloat(prompt("Enter your number:"));
+
+        function findSquare(num) {
+            return num * num;
+        }
+
+        function findCube(num) {
+            return num * num * num;
+        }
+
+        let squareValue = findSquare(number);
+        let cubeValue = findCube(number);
+
+        document.getElementById("result").innerHTML =
+            `Number is: ${number},<br> Square is: ${squareValue},<br> Cube is: ${cubeValue}.`;
+
+        console.log(`Your Number is: ${number}, Square is: ${squareValue}, Cube is: ${cubeValue}`);
+    </script>
+</body>
+
+</html>
