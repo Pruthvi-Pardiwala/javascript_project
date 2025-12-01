@@ -37,22 +37,16 @@ toggleBtn.addEventListener("click", () => {
 });
 
 const quotes = [
-    "Believe you can and you're halfway there.",
-    "Success is not final, failure is not fatal.",
-    "Dream big and dare to fail.",
-    "The harder you work, the luckier you get.",
-    "Do something today that your future self will thank you for.",
-    "Every moment is a fresh beginning.",
-    "Your only limit is your mind.",
-    "Small steps every day lead to big changes.",
-    "Push yourself, because no one else is going to do it for you.",
-    "Great things never come from comfort zones.",
-    "Believe in the power of consistency.",
-    "Success starts with self-discipline.",
-    "Don't watch the clock; do what it does—keep going.",
-    "Start where you are. Use what you have. Do what you can.",
-    "What you do today can improve all your tomorrows.",
-    "Focus on progress, not perfection."
+    "Success is the sum of small efforts repeated day in and day out.",
+    "Exams are not a test of intelligence, but of dedication and discipline.",
+    "Study hard now so you can relax later.",
+    "Your future is created by what you do today, not tomorrow.",
+    "Push yourself because no one else is going to do it for you.",
+    "The secret to getting ahead is getting started.",
+    "Don’t stop until you’re proud.",
+    "Believe in yourself and all that you are.",
+    "One day, all your hard work will pay off.",
+    "Dreams don’t work unless you do."
 ];
 
 let quoteIndex = 0;
@@ -90,3 +84,4 @@ setTimeout(() => {
 closeModalBtn.onclick = () => {
     modal.style.display = "none";
 };
+
