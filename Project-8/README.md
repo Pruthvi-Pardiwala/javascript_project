@@ -33,11 +33,12 @@ A dynamic JavaScript application that:
 <img width="1911" height="965" alt="Screenshot 2025-12-01 142603" src="https://github.com/user-attachments/assets/2dace125-da64-41c2-bc52-1c3a6c9a62f3" />
 
 ## 📂 Folder Structure
-project/
-│── 1.css
-│── 1.html
-│── 1.js
+project/<br>
+│── 1.css<br>
+│── 1.html<br>
+│── 1.js<br>
 └── README.md
 
 ## 👨‍💻 Developed By
 Pruthvi Pardiwala
+
