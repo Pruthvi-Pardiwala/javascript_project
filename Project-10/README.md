@@ -81,21 +81,24 @@ A responsive web application that:
 <img width="1911" height="965" alt="Bhagavad Gita Web Project Screenshot" src="PASTE_SCREENSHOT_URL_HERE" />
 
 ## 📂 Folder Structure
-project-bhagavadgita/  
-│── index.html  
-│── chapters.html  
-│── assets/  
-│   ├── css/  
-│   │   ├── bootstrap.min.css  
-│   │   ├── fonts.css  
-│   │   └── main.css  
-│   ├── js/  
-│   │   ├── bootstrap.min.js  
-│   │   └── main.js  
-│   └── images/  
-│       ├── logo/  
-│       └── hero-banner/  
-└── README.md  
+project-10/<br>
+│── project-10/<br>
+│   ├── assets/<br>
+│   │   ├── css/<br>
+│   │   │   ├── bootstrap.min.css  <br>
+│   │   │   ├── fonts.css  <br> 
+│   │   │   └── main.css <br>
+│   │   ├── js/<br>
+│   │   │   ├── bootstrap.min.js<br>
+│   │   │   └── main.js<br>
+│   │   └── images/<br>
+│   │   │    ├── logo/<br>
+│   │   │    └── hero-banner/<br>
+│   ├── index.html<br>
+│   └── chapters.html<br>
+└── README.md<br>
+
+
 
 ## 👨‍💻 Developed By
 Pruthvi Pardiwala
