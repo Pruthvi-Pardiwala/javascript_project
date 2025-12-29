@@ -78,7 +78,7 @@ A responsive web application that:
     </table>
 
 ## 📸 Screenshots
-<img width="1911" height="965" alt="Bhagavad Gita Web Project Screenshot" src="PASTE_SCREENSHOT_URL_HERE" />
+<img width="1179" height="901" alt="Screenshot 2025-12-29 105045" src="https://github.com/user-attachments/assets/58509621-c77c-4af1-84bb-4bf8a6a761fe" />
 
 ## 📂 Folder Structure
 project-10/<br>
