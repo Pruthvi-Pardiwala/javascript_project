@@ -1,4 +1,6 @@
 # 📖 Bhagavad Gita Web Project
+A responsive web application to read the Bhagavad Gita chapters with English & Hindi summaries, built using HTML, CSS, JavaScript, and Bootstrap.<br>
+The project dynamically fetches chapter data from a public API and renders it on the website
 
 ## 📌 Project Objective
 A responsive web application that:
@@ -26,7 +28,22 @@ A responsive web application that:
 ### 🎨 Responsive UI
 - Built using Bootstrap 5  
 - Fully responsive on all devices  
-- Clean and modern interface  
+- Clean and modern interface
+
+### ⚡ API-based data fetching using fetch()
+- Fetches Bhagavad Gita chapter data dynamically using the fetch() API
+- Loads real-time data from a public REST API without page reloads  
+- Ensures asynchronous, fast, and efficient content rendering on the UI
+
+### ✂️ Automatic summary truncation (30 words)
+- Automatically limits chapter summaries to 30 words
+- Improves readability and maintains a clean layout
+- Ensures consistent content length across all chapters
+
+### 🧩 Clean separation of HTML, CSS, and JavaScript
+- HTML handles structure and content layout
+- CSS manages styling, responsiveness, and visual design
+- <b>JavaScript</b> controls logic, API calls, and dynamic interactions
 
 ## 🛠 Technologies Used
 - HTML5  
