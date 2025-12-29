@@ -109,6 +109,20 @@ API Data Includes:
 - English summary
 - Hindi summary
 
+## 🧠 JavaScript Logic Highlights (main.js)
+- Conditional DOM loading (if (element))
+- API data fetching with fetch()
+- Dynamic HTML rendering using template literals
+- URL parameter handling using URLSearchParams
+- Summary word-limit logic (30 words)
+
+## 🎨 Styling Overview (main.css)
+- CSS variables for theme colors
+- Custom primary & secondary button colors
+- Hero banner with gradient overlay
+- Font pairing :<br>
+-- Inter (titles)<br>
+-- Crimson Pro (body text)
 
 ## 👨‍💻 Developed By
 Pruthvi Pardiwala
