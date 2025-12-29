@@ -124,5 +124,13 @@ API Data Includes:
 -- Inter (titles)<br>
 -- Crimson Pro (body text)
 
+## 📌 Future Improvements
+- 🔍 Search chapters
+- 🌙 Dark mode toggle
+- 🎧 Audio verses
+- 🌍 Language switcher
+- 🤖 Gita AI integration
+
 ## 👨‍💻 Developed By
-Pruthvi Pardiwala
+Pruthvi Pardiwala <br>
+Frontend Web Project – Bhagavad Gita 📜
