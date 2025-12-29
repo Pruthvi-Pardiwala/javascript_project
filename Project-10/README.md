@@ -46,12 +46,36 @@ A responsive web application that:
 - <b>JavaScript</b> controls logic, API calls, and dynamic interactions
 
 ## 🛠 Technologies Used
-- HTML5  
-- CSS3  
-- Bootstrap 5  
-- JavaScript (ES6)  
-- DOM Manipulation  
-- Fetch API  
+ <table>
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>Page structure</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Custom styling</td>
+            </tr>
+            <tr>
+                <td>Bootstrap 5</td>
+                <td>Responsive layout & components</td>
+            </tr>
+            <tr>
+                <td>JavaScript (ES6)</td>
+                <td>Logic, API calls, DOM manipulation</td>
+            </tr>
+            <tr>
+                <td>Public API</td>
+                <td>Bhagavad Gita chapter data</td>
+            </tr>
+        </tbody>
+    </table>
 
 ## 📸 Screenshots
 <img width="1911" height="965" alt="Bhagavad Gita Web Project Screenshot" src="PASTE_SCREENSHOT_URL_HERE" />
