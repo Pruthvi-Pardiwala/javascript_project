@@ -98,6 +98,16 @@ project-10/<br>
 │   └── chapters.html<br>
 └── README.md<br>
 
+## 🔗 API Used
+Bhagavad Gita Chapters API<br>
+https://vedicscriptures.github.io/chapters<br>
+<br>
+API Data Includes:
+- Chapter number
+- Transliteration
+- Meaning
+- English summary
+- Hindi summary
 
 
 ## 👨‍💻 Developed By
