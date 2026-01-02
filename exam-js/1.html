@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Task & Habit Tracker</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="app-container">
+                <div class="col-12">
+                    <header>
+                        <h1 class="mb-15">Smart Task & Habit Tracker</h1>
+                    </header>
+                </div>
+
+                <div class="row justify-content-evenly">
+                    <div class="col-5">
+                        <section class="card form-card mb-15">
+                            <h2 class="mb-15 text-white fs-4 fw-bold">Add New Task</h2>
+
+                            <form id="taskForm" class="form-grid">
+                                <input id="title" placeholder="Title" required style="color: white;">
+                                <input id="description" placeholder="Description">
+                                <input id="category" placeholder="Category">
+                                <input type="date" id="dueDate" required>
+
+                                <select id="priority">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+
+                                <button class="btn btn-gradient mt-15">Add Task</button>
+                            </form>
+                        </section>
+                        <section class="filter-row">
+                            <select id="priorityFilter">
+                                <option value="all">All Priorities</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section id="taskList"></section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
