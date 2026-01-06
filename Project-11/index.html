@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-API</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <!-- <header></header> -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="box col-7">
+                        <div class="title mb-5 pb-3 mt-5">
+                            <h1 class="text-center text-white">Local Weather Webside</h1>
+                            <p class="text-center text-white">www.opeanweathermap.com</p>
+                        </div>
+                        <!-- <div> -->
+                            <form class="row g-3 col-10" style="margin-left: 40px;" id="myForm">
+                                <div class="col-12">
+                                    <input type="text" class="form-control bg-transparent border-0" id="city"
+                                    placeholder="Enter your Country or city name... " required>
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="number" class="form-control opacity-50 bg-body-tertiary" id="zip"
+                                    placeholder="Zip code">
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="password" class="form-control opacity-50 bg-body-tertiary" id="inputPassword4"
+                                    placeholder="Country code">
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary bg-opacity-50 text-white bg-body-tertiary border-0">
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+
+                        <!-- </div> -->
+                        <div class="main-box  rounded-5" id="main-box"></div>
+                        <p class="text-white mt-3" style="margin-left: 150px;">© All right reserve by PruthviPardiwala7@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer></footer> -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

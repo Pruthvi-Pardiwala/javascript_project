@@ -1,0 +1,24 @@
+body{
+    background: #22C1C3;
+    background: linear-gradient(
+    0deg,
+    rgb(206, 171, 95) 0%,
+    #6895d1 100%
+    );
+    height: 100vh;
+}
+.main-box{
+    padding: 25px;
+    background: transparent;
+    width: 700px;
+}
+.trans{
+    margin-top: 50px;
+    background-color: rgba(58, 58, 58, 0.1);
+}
+.time{
+    font-size: 90px;
+}
+.date{
+    margin-left: 30px;
+}
