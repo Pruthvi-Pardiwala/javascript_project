@@ -1,0 +1,46 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.india,
+.allData {
+    background-color: #1e1e1e;
+}
+
+h1, h3, h4 {
+    color: #ffffff;
+}
+
+i {
+    color: #0dcaf0;
+}
+
+hr {
+    border-color: #444;
+}
+
+p {
+    color: #cfcfcf;
+}
+
+.list-group-item {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.col-4:hover,
+.list-group-item:hover {
+    background-color: #2a2a2a;
+    transition: 0.3s;
+}
