@@ -72,16 +72,16 @@ To develop a real-time web application that:
 
 ## 📂 Folder Structure
 
-COVID-19-India-Tracker/
-├── assets/
-│ ├── css/
-│ │ ├── bootstrap.min.css
-│ │ └── main.css
-│ ├── js/
-│ │ ├── bootstrap.min.js
-│ │ └── main.js
-├── index.html
-└── README.md
+COVID-19-India-Tracker/<br>
+├── assets/<br>
+│ ├── css/<br>
+│ │ ├── bootstrap.min.css<br>
+│ │ └── main.css<br>
+│ ├── js/<br>
+│ │ ├── bootstrap.min.js<br>
+│ │ └── main.js<br>
+├── index.html<br>
+└── README.md<br>
 
 yaml
 Copy code
@@ -129,7 +129,7 @@ Copy code
 
 ## 📸 Screenshots
 
-_Add screenshots of the dashboard UI here._
+<img width="1920" height="3691" alt="_C__Users_pranjal_Downloads_javascript_project-main_javascript_project-main_Project-11_index html" src="https://github.com/user-attachments/assets/a3b6848b-ae35-4ff6-9c81-c80167dfa017" />
 
 ---
 
